@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Clarusway Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div id="container">
+        <form action="result.html" method="GET">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            <label for="surname">Surname</label><br>
+            <input type="text" id="surname" name="surname" placeholder="Enter your surname"><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+            <label for="role">Which option best describe your current role?</label><br>
+            <select id="role" name="role" style="width:10vw">
+                <option value="html">Html</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+            </select><br>
+            <label>Would you recommend Clarusway to a friend?</label><br>
+            <input type="radio" id="yes" name="friend" value="yes">
+            <label for="definitely">Definitely Yes</label><br>
+            <input type="radio" id="maybe" name="friend" value="maybe">
+            <label for="maybe">Maybe</label><br>
+            <input type="radio" id="no" name="friend" value="no">
+            <label for="no">No</label><br>
+            <label for="role">What is your favorite feature of Clarusway?</label><br>
+            <select id="favorite" name="favorite" style="width:10vw">
+                <option value="different">Different</option>
+                <option value="unique">Unique</option>
+                <option value="best">Best</option>
+            </select><br>
+            <label>What would you like to see improved?(Check all that apply)</label><br>
+            <input type="checkbox" id="frontend" name="improve" value="frontend">
+            <label for="frontend"> Frontend Projects</label><br>
+            <input type="checkbox" id="backend" name="improve" value="backend">
+            <label for="backend"> Backend Projects</label><br>
+            <input type="checkbox" id="data" name="improve" value="data">
+            <label for="data"> Data Science</label><br>
+            <label>Any comments or suggestions?</label><br>
+            <textarea name="message" rows="10" cols="30">Enter your comments</textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
